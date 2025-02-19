@@ -429,6 +429,9 @@ header {
     bottom: 40px;
     right: 80px;
     z-index: 20;
+    @media all and (max-width: 980px) {
+        right: 20px;
+    }
     a {
         border-radius: 100%;
         display: flex;
@@ -441,6 +444,13 @@ header {
         border: 2px solid #e6e5e5;
         background: #fff;
         transition: all 0.3s ease;
+        @media all and (max-width: 980px) {
+            width: 40px;
+            height: 40px;
+            img {
+                max-width: 15px;
+            }
+        }
         &:hover {
             transform: rotate(180deg);
         }

@@ -499,6 +499,11 @@ header:before {
   right: 80px;
   z-index: 20;
 }
+@media all and (max-width: 980px) {
+  .to-top-btn {
+    right: 20px;
+  }
+}
 .to-top-btn a {
   border-radius: 100%;
   display: -webkit-box;
@@ -518,6 +523,15 @@ header:before {
   background: #fff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+@media all and (max-width: 980px) {
+  .to-top-btn a {
+    width: 40px;
+    height: 40px;
+  }
+  .to-top-btn a img {
+    max-width: 15px;
+  }
 }
 .to-top-btn a:hover {
   -webkit-transform: rotate(180deg);
