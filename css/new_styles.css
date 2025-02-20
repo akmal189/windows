@@ -561,8 +561,7 @@ header:before {
 }
 @media all and (min-width: 981px) {
   .to-top-btn a:hover {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    border-color: var(--primary-color);
   }
 }
 
