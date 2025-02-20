@@ -105,6 +105,11 @@ header .logo__description {
     display: none;
   }
 }
+@media all and (max-width: 575px) {
+  header .logo img {
+    width: 12rem;
+  }
+}
 
 .header__phone-link {
   font-size: 1.6rem;
@@ -537,6 +542,8 @@ header:before {
   background: #fff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 @media all and (max-width: 980px) {
   .to-top-btn a {
@@ -547,9 +554,11 @@ header:before {
     max-width: 15px;
   }
 }
-.to-top-btn a:hover {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+@media all and (min-width: 981px) {
+  .to-top-btn a:hover {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 
 @media all and (max-width: 1200px) {
