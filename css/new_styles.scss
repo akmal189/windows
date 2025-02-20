@@ -91,11 +91,18 @@
     --primary-color: #d67e2a;
 }
 
-.logo {
-
+header .logo {
+    width: 45rem;
     &__description {
         font-size: 1.4rem;
         font-family: var(--primary-font);
+        @media all and (max-width: 575px) {
+            display: block;
+            font-size: 1.6rem;
+            br {
+                display: none;
+            }
+        }
     }
 }
 .header__phone-link {
@@ -193,12 +200,13 @@
     margin-bottom: 7px;
     cursor: pointer;
     @media all and (max-width: 640px) {
-        font-size: 2.5rem;
+        font-size: 2rem;
         width: auto;
+        margin-left: 10px;
     }
 }
 header .container {
-    max-width: 162rem;
+    max-width: 120rem;
 }
 .fixed__menu-btn {
     text-align: center;
@@ -431,6 +439,7 @@ header {
     z-index: 20;
     @media all and (max-width: 980px) {
         right: 20px;
+        bottom: 80px;
     }
     a {
         border-radius: 100%;
@@ -470,6 +479,7 @@ header {
 .intro__content {
     @media all and (max-width: 640px) {
         padding-bottom: 5rem;
+        padding-top: 10rem;
     }
 }
 @media all and (max-width: 640px) {
