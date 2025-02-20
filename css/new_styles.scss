@@ -105,6 +105,9 @@ header .logo {
         }
     }
     img {
+        @media all and (min-width: 576px) {
+            width: 11rem;
+        }
         @media all and (max-width: 575px) {
             width: 12rem;
         }
