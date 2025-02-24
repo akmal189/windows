@@ -33,6 +33,7 @@ $(document).ready(() => {
         $(this).on("click", function (e) {
             var modalId = $(this).attr("data-modal"),
                 EachModal = $('.modal[data-modal="' + modalId + '"]');
+            e.preventDefault();
             $("html, body").addClass("my-body-noscroll-class");
             document.querySelector("#mobile__menu").classList.remove("active");
             modalTitle = $(this).attr("data-title");
